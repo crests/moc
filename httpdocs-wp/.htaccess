@@ -1,0 +1,49 @@
+DirectoryIndex index.html index.htm index.shtml index.cgi index.php index.hdml default.html default.htm default.shtml default.cgi default.php default.hdml /errmsg.html
+AddHandler server-parsed .html
+
+# メモリーオーバー対策（wpデフォルト値に合わせる）
+php_value memory_limit 256M
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteCond %{SERVER_PORT} ^443$
+RewriteCond %{REQUEST_URI} !^/adminer/
+RewriteCond %{REQUEST_URI} !^/contact/form/
+RewriteCond %{REQUEST_URI} !^/assets/
+RewriteCond %{REQUEST_URI} !^/fabicon.ico
+RewriteCond %{REQUEST_URI} !^/common_gochi/
+RewriteRule ^.*$ http://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+RewriteCond %{SERVER_PORT} !^443$
+RewriteCond %{REQUEST_URI} ^/adminer/ [OR]
+RewriteCond %{REQUEST_URI} ^/contact/form/
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+</IfModule>
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+<FilesMatch "\.(log|tpl|exe)$">
+	deny from all
+</FilesMatch>
+
+<files wp-config.php>
+order allow,deny
+deny from all
+</files>
+
+ErrorDocument 404 /404.html
+
+
+
