@@ -121,10 +121,10 @@
 <p class="top--concept__img" id="top--concept__img--03"></p>
 </div>
 <div class="top--concept__txt-box">
-<p class="top--concept__txt">サークルやクラスの飲み会と言えば、<br class="sp--line-break">いつも決まって飲み放題コース。<br>
-同じ金額を払うなら、<br class="sp--line-break">美味しい食事をしっかり食べたい。<br>
-お酒は、いいものを大切に味わいたい。<br>
-そんな大学生の想いから生まれた<br class="sp--line-break"><em>「ごちそう＋飲み物2杯」</em>の<br class="sp--line-break">美味しい選択肢、<br>
+<p class="top--concept__txt">サークルやクラスの飲み会と言えば、<br>いつも飲み放題コース。<br><br>
+同じ金額を払うなら、<br>おいしい食事をしっかり食べたい。<br>
+お酒は、いいものを味わいたい。<br><br>
+そんな想いから生まれた<br><em>「自慢の料理＋おすすめのドリンク」</em>の<br class="sp--line-break">おいしい選択肢、<br>
 それが<em>「ごち会」</em>です。</p>
 
 <!-- youtube movie (2018/04/09 added) -->
