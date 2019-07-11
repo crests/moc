@@ -62,6 +62,7 @@
 </div> -->
 <!-- /スライダー -->
 
+<script>
 <section class="top--cover-2" id="top--cover-2">
 <div class="top--cover-2__bg">
 <div class="top--cover-2__inner">
@@ -103,15 +104,16 @@
 <div class="js-panel-08 top--cover-2__item top--cover-2__item--box" id="cover__item--36"></div>
 <div class="js-panel-10 top--cover-2__item" id="cover__item--37"><img src="assets/img/index/cover_img_24.jpg" alt=""></div>
 <div class="js-panel-08 top--cover-2__item top--cover-2__item--box" id="cover__item--38"></div>
-<div class="top--cover-2__logo img_replace">ごちそう会</div>
+<div class="top--cover-2__logo img_replace">ごちそう会</div>-->
 <!-- /.top--cover-2__inner --></div>
 <p class="top--cover-2__logo tb-show img_replace">飲み放題より満足できる、ごち会を開こう！ ごち会</p>
 <!-- /.top--cover-2__bg --></div>
 </section>
+</script>
 
 <section class="section top--concept" id="top--concept">
 <div class="top__inner">
-<h1 class="top--hdr top--concept__hdr"><img src="/assets/img/index/concept_hdr_l.png" data-src="/assets/img/index/concept_hdr_s.png" alt="CONCEPT"><span>ごち会のコンセプト</span></h1>
+<h1 class="top--hdr top--concept__hdr"><img src="/assets/img/index/concept_hdr_l_bl.png" data-src="/assets/img/index/concept_hdr_s_bl.png" alt="CONCEPT"></h1>
 <p class="top--consept__title" id="top--consept__title"><span id="js-txt-01">また飲み放題？</span><br class="sp--line-break"><span class="span" id="js-txt-02">同じ金額を払うならごち会！</span></p>
 <div class="top--concept__img-box">
 <p class="top--concept__img" id="top--concept__img--01"></p>
