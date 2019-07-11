@@ -113,7 +113,7 @@
 
 <section class="section top--concept" id="top--concept">
 <div class="top__inner">
-<h1 class="top--hdr top--concept__hdr"><img src="/assets/img/index/concept_hdr_l_bl.png" data-src="/assets/img/index/concept_hdr_s_bl.png" alt="CONCEPT"></h1>
+<h1 class="top--hdr top--concept__hdr"><img src="/assets/img/index/concept_hdr_l.png" data-src="/assets/img/index/concept_hdr_s.png" alt="CONCEPT"></h1>
 <p class="top--consept__title" id="top--consept__title"><span id="js-txt-01">また飲み放題？</span><br class="sp--line-break"><span class="span" id="js-txt-02">同じ金額を払うならごち会！</span></p>
 <div class="top--concept__img-box">
 <p class="top--concept__img" id="top--concept__img--01"></p>
@@ -143,7 +143,7 @@
 <section class="section top--rest" id="js-heightAlign">
 <div class="top__inner">
 <div class="top--rest__inner">
-<h1 class="top--hdr top--rest__hdr"><img src="/assets/img/index/rest_hdr_l.png" data-src="/assets/img/index/rest_hdr_s.png" alt="RESTAURANT"><span>ごち会コースの楽しめるお店</span></h1>
+<h1 class="top--hdr top--rest__hdr"><img src="/assets/img/index/rest_hdr_l.png" data-src="/assets/img/index/rest_hdr_s.png" alt="RESTAURANT"></h1>
 <div class="top--rest__list clearfix" id="top--rest__section">
 <div class="top--rest__item-box clearfix">
 <?php
@@ -254,7 +254,7 @@
 
 <section class="section top--enjoy">
 <div class="top__inner">
-<h1 class="top--hdr top--enjoy__hdr"><img src="/assets/img/index/enjoy_hdr_l.png" alt="ENJOYMENT" data-src="/assets/img/index/enjoy_hdr_s.png"><span>ごちそうを楽しむために</span></h1>
+<h1 class="top--hdr top--enjoy__hdr"><img src="/assets/img/index/enjoy_hdr_l.png" alt="ENJOYMENT" data-src="/assets/img/index/enjoy_hdr_s.png"></h1>
 
 <div class="top--enjoy__list">
 <?php
@@ -292,18 +292,18 @@
 	endif;
 ?>
 <!-- /.top--enjoy__list --></div>
-<p class="section__btn top--enjoy__btn img_replace"><a href="/enjoyment/"><span>ENJOYMENT一覧はこちら</span></a></p>
+<p class="section__btn top--enjoy__btn img_replace"><a href="/enjoyment/"><span>ブログ一覧はこちら</span></a></p>
 </div>
 </section>
 
 <section class="section top--about" id="top--about">
 <div class="top__inner">
-<h1 class="top--hdr top--about__hdr"><img src="/assets/img/index/about_hdr_l.png" data-src="/assets/img/index/about_hdr_s.png" alt="ABOUT US"><span>私たちについて</span></h1>
+<h1 class="top--hdr top--about__hdr"><img src="/assets/img/index/about_hdr_l.png" data-src="/assets/img/index/about_hdr_s.png" alt="ABOUT US"></h1>
 <div class="top--about__paper" id="top--about__paper--left"></div>
 <div class="top--about__paper" id="top--about__paper--right"></div>
 <p class="top--about__txt"><em>「ごち会」</em>は<br>
-「ごちそう＋飲み物2杯の<br class="sp--line-break">美味しい選択肢」を提案する<br>
-学生団体<em>「想食系幹事」</em><br class="sp--line-break">が推進するプロジェクトです。</p>
+「自慢の料理＋おすすめのドリンク」の<br>おいしい選択肢を提案する<br>
+学生団体<em>「ごちそう会」</em><br>が推進するプロジェクトです。</p>
 
 <p class="section__btn top--about__btn img_replace"><a href="/about/"><span>詳しくはこちら</span></a></p>
 </div>
