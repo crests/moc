@@ -9,11 +9,11 @@
 <!-- 通常ナビ -->
 <nav class="header__nav">
 <ul class="header__nav__list clearfix">
-<li class="header__nav__item header__nav__item--01 img_replace"><a href="/concept/">CONCEPT ごち会のコンセプト</a></li>
-<li class="header__nav__item header__nav__item--02 img_replace"><a href="/restaurant/tokyo/">RESTAURANT ごち会コースの楽しめるお店</a></li>
-<li class="header__nav__item header__nav__item--03 img_replace">SPECIAL coming soon</li>
-<li class="header__nav__item header__nav__item--04 img_replace"><a href="/enjoyment/">ENJOYMENT ごちそうを楽しむために</a></li>
-<li class="header__nav__item header__nav__item--05 img_replace"><a href="/about/">ABOUT 私たちについて</a></li>
+<li class="header__nav__item header__nav__item--01 img_replace"><a href="/concept/">ごち会のコンセプト</a></li>
+<li class="header__nav__item header__nav__item--02 img_replace"><a href="/restaurant/tokyo/">ごち会コースの楽しめるお店</a></li>
+<!-- <li class="header__nav__item header__nav__item--03 img_replace">coming soon</li> -->
+<li class="header__nav__item header__nav__item--04 img_replace"><a href="/enjoyment/">ごち会のブログ</a></li>
+<li class="header__nav__item header__nav__item--05 img_replace"><a href="/about/">ごち会の団体紹介</a></li>
 </ul>
 </nav>
 <!-- /通常ナビ -->
@@ -21,11 +21,11 @@
 <!-- ミニヘッダー用ナビ -->
 <nav class="header__nav--mini">
 <ul class="header__nav__list clearfix">
-<li class="header__nav__item header__nav__item--01 img_replace"><a href="/concept/">CONCEPT ごち会のコンセプト</a></li>
-<li class="header__nav__item header__nav__item--02 img_replace"><a href="/restaurant/tokyo/">RESTAURANT ごち会コースの楽しめるお店</a></li>
-<li class="header__nav__item header__nav__item--03 img_replace">SPECIAL coming soon</li>
-<li class="header__nav__item header__nav__item--04 img_replace"><a href="/enjoyment/">ENJOYMENT ごちそうを楽しむために</a></li>
-<li class="header__nav__item header__nav__item--05 img_replace"><a href="/about/">ABOUT 私たちについて</a></li>
+<li class="header__nav__item header__nav__item--01 img_replace"><a href="/concept/">ごち会のコンセプト</a></li>
+<li class="header__nav__item header__nav__item--02 img_replace"><a href="/restaurant/tokyo/">ごち会コースの楽しめるお店</a></li>
+<!-- <li class="header__nav__item header__nav__item--03 img_replace">SPECIAL coming soon</li> -->
+<li class="header__nav__item header__nav__item--04 img_replace"><a href="/enjoyment/">ごち会のブログ</a></li>
+<li class="header__nav__item header__nav__item--05 img_replace"><a href="/about/">ごち会の団体紹介</a></li>
 </ul>
 </nav>
 <!-- /ミニヘッダー用ナビ -->
