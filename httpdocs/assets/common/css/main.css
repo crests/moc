@@ -842,10 +842,10 @@ a:hover {
 	}
 	.header__logo, .header--fixed .header__logo {
 		position: static;
-		margin: 0 auto;
+		margin: 0 0 0 20px;
 		width: 85px;
 		height: 70px;
-		background: url(../../common/img/logo_gochisokai.svg) center center no-repeat;
+		background: url(../../common/img/logo_gochisokai.svg) left center no-repeat;
 		background-size: 100%;
 	}
 	.header__is-btn a, .header--fixed .header__is-btn a {
@@ -1696,7 +1696,7 @@ a:hover {
 .top--cover-2 {
 	overflow: hidden;
 	opacity: 0;
-	width: 100%; 
+	width: 100%;
 
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
@@ -1970,7 +1970,7 @@ a:hover {
 		opacity: 1;
 		width: 100%;
 		background: url(../../img/index/cover_bg_t.jpg) center repeat-x;
-		background-size: 1467px 413px; 
+		background-size: 1467px 413px;
 
 		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	}
@@ -2425,7 +2425,7 @@ a:hover {
 	padding: 8px 0 11px;
 	font-size: 14px;
 	font-weight: bold;
-	line-height: 1.4; 
+	line-height: 1.4;
 	color: #333;
 }
 
@@ -4055,7 +4055,7 @@ a:hover {
 	margin: 40px 0 0;
 	padding: 30px 20px 25px;
 	background: #fff3ef;
-	font-size: 14px; 
+	font-size: 14px;
 	color: #333;
 }
 @media only screen and (max-width: 640px) {
@@ -4141,7 +4141,7 @@ a:hover {
 }
 @media only screen and (max-width: 640px) {
 	.rest__details__shop__course__menu__txtarea__inner + .rest__details__shop__course__menu__txtarea__inner {
-		padding: 10px 10px 20px; 
+		padding: 10px 10px 20px;
 		border-left: none;
 	}
 }
@@ -4196,7 +4196,7 @@ a:hover {
 	left: 124px;
 	margin: 0;
 	width: 107px;
-	background: #fff3ef; 
+	background: #fff3ef;
 	font-size: 16px;
 	text-align: center;
 	color: #ec3000;
@@ -4207,7 +4207,7 @@ a:hover {
 @media only screen and (max-width: 640px) {
 	.rest__details__shop__course__menu__txtarea__title {
 		left: 50%;
-		width: 97px; 
+		width: 97px;
 		-webkit-transform: translateX(-50%);
 		    -ms-transform: translateX(-50%);
 		        transform: translateX(-50%);
@@ -4222,7 +4222,7 @@ a:hover {
 	width: 30px;
 	height: 22px;
 	background: url(/assets/img/restaurant/rest_details_shop_course_menu_txtarea_inner_title_food.png) no-repeat;
-	background-size: 100%; 
+	background-size: 100%;
 	-webkit-transform: translateY(-50%);
 	    -ms-transform: translateY(-50%);
 	        transform: translateY(-50%);
@@ -4357,7 +4357,7 @@ a:hover {
 	margin: 0;
 	padding: 15px 0 0 7px;
 	font-size: 14px;
-	line-height: 1.5; 
+	line-height: 1.5;
 	color: #333;
 }
 @media only screen and (max-width: 640px) {
@@ -6490,7 +6490,7 @@ a:hover {
 	left: 260px;
 	margin: 0;
 	font-size: 12px;
-	line-height: 2; 
+	line-height: 2;
 	text-align: center;
 	color: #ec3000;
 }
@@ -6876,7 +6876,7 @@ a:hover {
 	margin: 0 0 0 415px;
 	width: 172px;
 	height: 109px;
-	background: url(../../common/img/logo_gochisokai.svg) no-repeat;
+	background: url(../../common/img/logo_gochisokai.svg) left center no-repeat;
 }
 
 /* ごち会ロゴについて */
