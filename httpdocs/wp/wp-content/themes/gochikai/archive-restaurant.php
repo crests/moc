@@ -16,7 +16,7 @@
 	$q_obj = get_queried_object();
 	// ページに対応するカテゴリーの階層情報を取得（restaurant記事があるもののみ）
 	$cat_hier = get_category_hierarchy($q_obj->term_id, true);
-	
+
 	// メタ情報用にこのページのURLを再現
 	$permalink = home_url("/restaurant/", "http");
 	if ( $cat_hier["attr"] === "grandchild" ) {
@@ -24,10 +24,10 @@
 	} else {
 		$permalink .= $cat_hier["cat"]->slug ."/";
 	}
-	
+
 	// メタ情報を取得
 	$meta = get_gochi_meta("restaurant");
-	
+
 	// ジャンルの指定があればタクソノミー情報を取得しつつ、$permalinkに追加
 	if (isset($wp_query->query_vars["food_cat"]) && !empty($wp_query->query_vars["food_cat"])) {
 		$food_cat = get_term_by("slug", $wp_query->query_vars["food_cat"], "food_cat");
@@ -70,14 +70,14 @@
 <main class="main">
 <section class="section rest" id="js-heightAlign">
 <div class="section__inner">
-<h1 class="top--hdr rest__hdr"><img src="/assets/img/index/rest_hdr_l.png" data-src="/assets/img/index/rest_hdr_s.png" alt="RESTAURANT"><span>ごち会コースの楽しめるお店</span></h1>
+<h1 class="top--hdr rest__hdr"><img src="/assets/img/index/rest_hdr_l.png" data-src="/assets/img/index/rest_hdr_s.png" alt="RESTAURANT"></h1>
 <?php
 	// 全体の記事がある場合のみカテゴリー別に再抽出
 	if (have_posts()) :
 
 		// newマーク表示のための基準となる日付（現在より7日前）を取得
 		$new_date = date("Ymd", strtotime("-7 day"));
-		
+
 		// 1階層下のカテゴリー情報をループに使用できるよう汎用的に設定
 		$children = (empty($food_cat)) ? $cat_hier["children"] : array($food_cat);
 
@@ -86,7 +86,7 @@
 			"post_type" => "restaurant",
 			"posts_per_page" => -1,
 		);
-		
+
 		// 料理ジャンルタクソノミーの指定がない場合のみアンカーリンクを出力
 		if (empty($food_cat)) :
 ?>
@@ -99,7 +99,7 @@
 				// 自分が孫の場合、料理ジャンルタクソノミーはそのカテゴリーで記事が存在するとは限らないので、
 				// 条件を絞り込んで記事を抽出し、記事がある場合のみアンカーリンクを表示する
 				if ($cat_hier["attr"] === "grandchild") :
-				
+
 					// 追加条件：カテゴリー＆料理ジャンルタクソノミー別で再抽出
 					$add_args = array(
 						"cat" => $cat_hier["cat"]->term_id,
@@ -110,17 +110,17 @@
 							),
 						),
 					);
-					
+
 					// 追加条件を追加して記事を抽出
 					$args = $base_args;
 					$args += $add_args;
 					$anc_posts = get_posts($args);
-				
+
 				else :
 					// 自分が孫以外の場合は条件を満たすようにダミーで配列をセット
 					$anc_posts = array(1);
 				endif;
-				
+
 				// 孫の場合、記事がある場合のみアンカーリンクのリストを出力
 				if (count($anc_posts) > 0) :
 ?>
@@ -137,14 +137,14 @@
 		// 1階層下のカテゴリー情報ループ開始
 		// 自分が孫の場合は料理ジャンルを下階層とし、さらに料理ジャンルまで指定があれば絞り込んで表示
 		foreach ($children as $child) :
-		
+
 			// 料理ジャンルタクソノミーまで指定がある場合、記事の再抽出は実行せず、もとの抽出結果を使用する
 			if (empty($food_cat)) :
-			
+
 				// 自分が孫の場合、$childには料理ジャンルカテゴリーが設定されているので、
 				// それに対応した追加条件を設定
 				if ($cat_hier["attr"] === "grandchild") :
-				
+
 					// 追加条件：カテゴリー＆料理ジャンルタクソノミー別に再抽出
 					$add_args = array(
 						"cat" => $cat_hier["cat"]->term_id,
@@ -164,17 +164,17 @@
 					$add_args = array(
 						"cat" => $child->term_id,
 					);
-				
+
 				endif;
 
 				// 追加条件を追加して記事を抽出
 				$args = $base_args;
 				$args += $add_args;
 				$wp_query->query($args);
-			
+
 			// 記事の再抽出終了
 			endif;
-			
+
 			// 再抽出した結果も踏まえ、レストラン記事がある場合のみ表示開始
 			if (have_posts()) :
 ?>
@@ -189,11 +189,11 @@
 
 			// カテゴリー内料理ジャンル毎のループ開始
 			foreach ($terms as $term) :
-			
+
 				// 自分が孫以外（子を想定）の場合、下階層カテゴリーと料理ジャンルで
 				// 絞り込む追加条件を設定
 				if ($cat_hier["attr"] !== "grandchild") :
-				
+
 					$add_args = array(
 						"cat" => $child->term_id,
 						"post__not_in" => $not_in,
@@ -204,44 +204,44 @@
 							),
 						),
 					);
-					
+
 					// 基本条件に追加条件をプラス
 					$args = $base_args;
 					$args += $add_args;
 
 					// 追加条件を設定して再抽出
 					$wp_query->query($args);
-				
+
 				// 自分が孫の場合は、既に抽出されている記事でOKなので何もしない
 				endif;
 
 				// レストラン記事ループ開始
 				while (have_posts()) : the_post();
-				
+
 					// 料理ジャンルを複数持つ場合に、１つのカテゴリー内で同じ記事が重複しないよう
 					// １度掲載した記事のIDを配列に追加していく（別カテゴリーでは重複表示でOK）
 					$not_in[] = get_the_id();
-				
+
 					// newマーク表示用のclassを設定
 					$new_class = ( strtotime(get_the_time("Ymd")) > strtotime($new_date)) ? " top--rest__item--new" : null;
-					
+
 					// 料理ジャンルタクソノミーを取得
 					$post_term = get_the_terms(get_the_id(), "food_cat");
 					$post_term = $post_term[0];
-					
+
 					// パーマリンクを生成（カテゴリー複数の場合のバリエーションに対応）
 					$post_url = home_url("/restaurant/", "http");
 					$post_url .= ($cat_hier["attr"] === "grandchild") ? $cat_hier["parent"]->slug ."/". $cat_hier["cat"]->slug ."/". $child->slug ."/" :
 							$cat_hier["cat"]->slug ."/". $child->slug ."/". $post_term->slug ."/";
-					
+
 					$post_url .= get_the_id() ."/";
 
 					// メイン画像（PC・タブレット用、スマホ用）を取得
 					$images =get_restaurant_slider_images(get_the_id(), true);
-					
+
 					// 表示用料理ジャンルタクソノミー情報を取得
 					$disp_term = get_disp_term();
-					
+
 					// 表示用コース料金を取得
 					$disp_charge = get_disp_charge(get_the_id());
 ?>
@@ -278,7 +278,7 @@
 		// 1階層下のカテゴリーループ終了
 		endforeach;
 		wp_reset_postdata(); wp_reset_query();
-		
+
 	// 全体の記事がゼロの場合の結果表示（仮）
 	else:
 		echo "<p>該当店舗がありません。</p>";

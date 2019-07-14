@@ -52,7 +52,7 @@
 <main class="main">
 <section class="section top--enjoy">
 <div class="section__inner">
-<h1 class="top--hdr top--enjoy__hdr"><img src="/assets/img/index/enjoy_hdr_l.png" alt="ENJOYMENT" data-src="/assets/img/index/enjoy_hdr_s.png"><span>ごちそうを楽しむために</span></h1>
+<h1 class="top--hdr top--enjoy__hdr"><img src="/assets/img/index/enjoy_hdr_l.png" alt="ENJOYMENT" data-src="/assets/img/index/enjoy_hdr_s.png"></h1>
 <div class="enjoy__inner">
 <div class="enjoy__article__title-area">
 <p class="enjoy__article__tag"><?php echo $term->name; ?></p>
@@ -89,7 +89,7 @@
 <?php
 	$group = get_group("enjoyment_add_article");
 	$g_cnt = count($group);
-	
+
 	// 追加記事がある場合のみ以下を表示
 	if ($g_cnt > 0) :
 		// 追加記事があった場合は、画像全部とそれに対応するクラスを取得
@@ -144,7 +144,7 @@
 		),
 	);
 	$other_posts = get_posts($args);
-	
+
 	// 同じカテゴリの記事がある場合のみ以下を表示
 	if (count($other_posts) > 0) :
 ?>

@@ -43,7 +43,7 @@
 <section class="section">
 <div class="section__inner">
 
-<h1 class="top--hdr news__hdr"><img src="/assets/img/news/news-page_hdr_l.png" alt="NEWS" data-src="/assets/img/news/news-page_hdr_s.png"><span>NEWS 一覧</span></h1>
+<h1 class="top--hdr news__hdr"><img src="/assets/img/news/news-page_hdr_l.png" alt="NEWS" data-src="/assets/img/news/news-page_hdr_s.png"></h1>
 <div class="news__inner">
 <div class="top--news__list">
 
@@ -92,14 +92,14 @@
 		$to_page = $max_page;
 		$from_page = $from_page - $diff;
 	}
-	
+
 	// ニュース一覧繰り返し表示開始
 	while (have_posts()) : the_post();
-	
+
 		// ニュースカテゴリー情報を取得
 		$news_cat = get_the_terms(get_the_id(), "news_cat");
 		$news_cat = $news_cat[0];
-		
+
 		// 外部リンク指定時のclassなどを指定
 		if (get("news_external") === 1) :
 			$blank = ' target="_blank"';
@@ -107,7 +107,7 @@
 		else :
 			$blank = null; $class = null;
 		endif;
-		
+
 		// url指定の有無flg
 		$f_url = (get("news_url") <> "") ? true : false;
 ?>
@@ -169,10 +169,10 @@
 	// 現在のページを含めて前後2ページを表示ループ開始
 	// 但し、存在しないページ番号は非表示
 	for ($i = $from_page; $i <= $to_page; $i++) :
-	
+
 		// 現在のページの場合、page-current属性を追加
 		$current = ($i === $cur_page) ? " page-current" : null;
-		
+
 		// 実際に存在するページ番号のみを表示
 		if (isset($paginates[$i - 1])) :
 ?>

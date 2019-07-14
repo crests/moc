@@ -5,9 +5,9 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
 <?php
 	// ページに対応したパーマリンクを生成
-	$cat = (isset($wp_query->query_vars["category_name"])) ? 
+	$cat = (isset($wp_query->query_vars["category_name"])) ?
 		get_category_by_slug($wp_query->query_vars["category_name"]) : null;
-	$food_cat = (isset($wp_query->query_vars["food_cat"])) ? 
+	$food_cat = (isset($wp_query->query_vars["food_cat"])) ?
 		$wp_query->query_vars["food_cat"] : null;
 	$cat_hier = (!empty($cat)) ? get_category_hierarchy($cat->term_id, true) : null;
 	if (empty($cat_hier)) :
@@ -16,7 +16,7 @@
 		$permalink = home_url("/restaurant/", "http") . $cat_hier["parent"]->slug ."/". $cat->slug ."/".
 						$food_cat ."/". get_the_id() . "/";
 	endif;
-	
+
 	// レポート記事のURLを取得
 	// この店を関連店舗に選んだレポート記事を抽出
 	$args = array(
@@ -37,20 +37,20 @@
 			}
 		}
 	}
-	
+
 	// メタ情報の取得（複数箇所で使用するため、まとめて取得）
 	// タイトルは、入力があればそちらを活かし、なければ自動生成されるfunction get_rest_meta_title()を使用
 	$title = get_rest_meta_title(get_the_id());
 	$description = esc_html(get("restaurant_meta_description"));
 	$keywords = esc_html(get("restaurant_meta_keywords"));
-	
+
 	// ジャンル表示、コース・料金表示などの繰り返し共通表示情報を取得
 	$genre = get_disp_term();							// ジャンル
 	$disp_course = get_disp_course(get_the_id());		// コース名称と料金
 	$rest_name = esc_html(get("restaurant_name"));		// 店舗名
 	$rest_ruby = esc_html(get("restaurant_name_ruby"));	// 店舗名カナ
 	$rest_tel = get("restaurant_tel");					// 電話番号
-	
+
 	// 住所
 	$rest_address = get("restaurant_address1").get("restaurant_address2");
 	$org_address = $rest_address;
@@ -102,7 +102,7 @@
 <main class="main">
 <section class="section rest__details">
 <div class="section__inner">
-<h1 class="top--hdr rest__hdr"><img src="/assets/img/index/rest_hdr_l.png" data-src="/assets/img/index/rest_hdr_s.png" alt="RESTAURANT"><span>ごち会コースの楽しめるお店</span></h1>
+<h1 class="top--hdr rest__hdr"><img src="/assets/img/index/rest_hdr_l.png" data-src="/assets/img/index/rest_hdr_s.png" alt="RESTAURANT"></h1>
 
 <div class="rest__details__inner">
 <div class="rest__dateils__inner-sp--liquid">
@@ -376,7 +376,7 @@
 		"post__not_in" => array(get_the_id()),
 	);
 	$others = get_posts($args);
-	
+
 	// 同じエリアに他に1件も無ければ、親エリアの店を取得
 	if (count($others) <= 0) :
 		$args = array(
@@ -389,7 +389,7 @@
 		$others = get_posts($args);
 		$p_flg = true;
 	endif;
-	
+
 	// 親エリアにも他に店がなければ、近くの店舗はまるごと非表示
 	if (count($others) > 0) :
 ?>

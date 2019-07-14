@@ -6,7 +6,7 @@
 <?php
 	// enjカテゴリーがリクエストされている場合のみ変数$enj_catに値を格納しておく
 	$enj_cat = (isset($wp_query->query_vars["enj_cat"])) ? $wp_query->query_vars["enj_cat"] : null;
-	
+
 	// 現ページのURLを生成
 	$url = home_url("/enjoyment/", "http");
 	$url .= (!empty($enj_cat)) ? $enj_cat ."/" : null;
@@ -18,7 +18,7 @@
 		"get" => "all",
 	);
 	$terms = get_terms("enj_cat", $args);
-	
+
 	// メタ情報を取得
 	$meta = get_gochi_meta("enjoyment-list");
 ?>
@@ -60,7 +60,7 @@
 
 <section class="section top--enjoy">
 <div class="section__inner">
-<h1 class="top--hdr top--enjoy__hdr"><img src="/assets/img/index/enjoy_hdr_l.png" alt="ENJOYMENT" data-src="/assets/img/index/enjoy_hdr_s.png"><span>ごちそうを楽しむために</span></h1>
+<h1 class="top--hdr top--enjoy__hdr"><img src="/assets/img/index/enjoy_hdr_l.png" alt="ENJOYMENT" data-src="/assets/img/index/enjoy_hdr_s.png"></h1>
 
 <div class="enjoy__sort clearfix">
 <ul class="enjoy__sort__list clearfix">
@@ -182,10 +182,10 @@
 	// 現在のページを含めて前後2ページを表示ループ開始
 	// 但し、存在しないページ番号は非表示
 	for ($i = $from_page; $i <= $to_page; $i++) :
-	
+
 		// 現在のページの場合、page-current属性を追加
 		$current = ($i === $cur_page) ? " page-current" : null;
-		
+
 		// 実際に存在するページ番号のみを表示
 		if (isset($paginates[$i - 1])) :
 ?>

@@ -18,10 +18,10 @@
 	// リクエストされたページに基づくカテゴリー情報を取得
 	$cat = get_category_by_slug($cat_slug);
 	$cat_hier = get_category_hierarchy($cat->term_id);
-	
+
 	// 関連店舗として選んだ記事のIDを取得
 	$p = get_post_meta(get_the_id(), "report_target", true);
-	
+
 	// restaurant詳細ページと共通のメタ情報を取得
 	$title = get_rest_meta_title($p);
 	$description = esc_html(get_post_meta($p, "restaurant_meta_description", true));
@@ -71,7 +71,7 @@
 <main class="main">
 <section class="section rest__details">
 <div class="section__inner">
-<h1 class="top--hdr rest__hdr"><img src="/assets/img/index/rest_hdr_l.png" data-src="/assets/img/index/rest_hdr_s.png" alt="RESTAURANT"><span>ごち会コースの楽しめるお店</span></h1>
+<h1 class="top--hdr rest__hdr"><img src="/assets/img/index/rest_hdr_l.png" data-src="/assets/img/index/rest_hdr_s.png" alt="RESTAURANT"></h1>
 
 <div class="rest__details__inner">
 <div class="rest__dateils__inner-sp--liquid">
@@ -147,7 +147,7 @@
 			foreach ($each as $k => $v) :
 				$each[$k] = array_shift($each[$k]);
 			endforeach;
-			
+
 			// 小見出しがある場合のみh2タグを出力
 			if (!empty($each["report_subtitle"])) :
 ?>
@@ -156,7 +156,7 @@
 <?php
 			// 小見出し表示if終了
 			endif;
-			
+
 			// 画像がある場合のみpタグ、imgタグを出力
 			if (!empty($each["report_picture"])) :
 ?>
@@ -165,7 +165,7 @@
 			// 画像がある場合の表示if終了
 			endif;
 			$i++;		// 画像をカウントアップ
-			
+
 			// 紹介文がある場合のみ、pタグを出力
 			if (!empty($each["report_content"])) :
 ?>
@@ -207,7 +207,7 @@
 		"post__not_in" => array($p),
 	);
 	$others = get_posts($args);
-	
+
 	// 同じエリアに他に1件も無ければ、親エリアの店を取得（親記事以外）
 	if (count($others) <= 0) :
 		$args = array(
@@ -220,7 +220,7 @@
 		$others = get_posts($args);
 		$p_flg = true;
 	endif;
-	
+
 	// 親エリアにも他に店がなければ近くの店舗はまるごと非表示
 	if (count($others) > 0) :
 ?>
