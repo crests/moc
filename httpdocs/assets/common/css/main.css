@@ -360,11 +360,11 @@ a:hover {
 .header--fixed .header__logo, .header__mini .header__logo {
 	top: 0;
 	bottom: 0;
-	left: 16px;
+	left: 20px;
 	margin: auto;
-	width: 61px;
-	height: 35px;
-	background: url(../../common/img/logo_gochisokai.svg) no-repeat;
+	width: 69px;
+	height: 43px;
+	background: url(/assets/common/img/logo_gochisokai.svg) no-repeat;
 }
 
 .header--fixed .header__is-btn, .header__mini .header__is-btn {
@@ -562,7 +562,7 @@ a:hover {
 		margin: 0 auto;
 		width: 120px;
 		height: 95px;
-		background: url(../../common/img/logo_gochisokai.svg) no-repeat;
+		background: url(/assets/common/img/logo_gochisokai.svg) no-repeat;
 		background-size: 120px 95px;
 	}
 	.header--fixed .header__logo {
@@ -570,7 +570,7 @@ a:hover {
 		margin: 0 auto;
 		width: 120px;
 		height: 95px;
-		background: url(../../common/img/logo_gochisokai.svg) no-repeat;
+		background: url(/assets/common/img/logo_gochisokai.svg) no-repeat;
 		background-size: 120px 95px;
 	}
 	.header--fixed .header__is-btn {
@@ -843,9 +843,9 @@ a:hover {
 	.header__logo, .header--fixed .header__logo {
 		position: static;
 		margin: 0 0 0 20px;
-		width: 77px;
-		height: 62px;
-		background: url(../../common/img/logo_gochisokai.svg) left center no-repeat;
+		width: 85px;
+		height: 70px;
+		background: url(/assets/common/img/logo_gochisokai.svg) left center no-repeat;
 		background-size: 100%;
 	}
 	.header__is-btn a, .header--fixed .header__is-btn a {
@@ -1155,7 +1155,7 @@ a:hover {
 	margin: 0 0 37px 37px;
 	width: 140px;
 	height: 88px;
-	background: url(../../common/img/logo_gochisokai.svg) no-repeat;
+	background: url(/assets/common/img/logo_gochisokai.svg) no-repeat;
 }
 .footer__logo a {
 	display: block;
@@ -1958,7 +1958,7 @@ a:hover {
 	margin: auto;
 	width: 352px;
 	height: 222px;
-	background: url(../../common/img/logo_gochisokai.svg) no-repeat;
+	background: url(/assets/common/img/logo_gochisokai.svg) no-repeat;
 
 	-webkit-backface-visibility: hidden;
 	        backface-visibility: hidden;
@@ -5855,7 +5855,7 @@ a:hover {
 	margin: auto;
 	width: 300px;
 	height: 190px;
-	background: url(../../common/img/logo_gochisokai.svg) no-repeat;
+	background: url(/assets/common/img/logo_gochisokai.svg) no-repeat;
 }
 
 .about__cover__img {
@@ -6876,7 +6876,7 @@ a:hover {
 	margin: 0 0 0 415px;
 	width: 172px;
 	height: 109px;
-	background: url(../../common/img/logo_gochisokai.svg) left center no-repeat;
+	background: url(/assets/common/img/logo_gochisokai.svg) left center no-repeat;
 }
 
 /* ごち会ロゴについて */
