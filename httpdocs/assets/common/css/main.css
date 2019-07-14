@@ -148,6 +148,10 @@ a:hover {
 	display: block;
 	height: 100%;
 }
+.header__search_rest a {
+	display: block;
+	height: 100%;
+}
 
 .header__is-btn {
 	display: none;
@@ -568,27 +572,29 @@ a:hover {
 	}
 	.header__logo {
 		position: static;
-		margin: 0 auto;
+		margin: 0 0 0 40px;
 		width: 120px;
 		height: 95px;
-		background: url(/assets/common/img/logo_gochisokai.svg) no-repeat;
-		background-size: 120px 95px;
+		background: url(/assets/common/img/logo_gochisokai.svg) left center no-repeat;
+		background-size: 100%;
 	}
 	.header--fixed .header__logo {
 		position: static;
-		margin: 0 auto;
+		margin: 0 0 0 40px;
 		width: 120px;
 		height: 95px;
-		background: url(/assets/common/img/logo_gochisokai.svg) no-repeat;
-		background-size: 120px 95px;
+		background: url(/assets/common/img/logo_gochisokai.svg) left center no-repeat;
+		background-size: 100%;
 	}
-	.header--fixed .header__search_rest {
-		position: static;
-		margin: 0 auto;
-		width: 300px;
-		height: 95px;
+	.header__search_rest, .header--fixed .header__search_rest {
+		position: absolute;
+		top: 15px;
+		/*margin: 0 0 0 200px;*/
+		margin: 0 31%;
+		width: 40%;/*150px;*/
+		height: 85px;
 		background: url(/assets/common/img/search_rest.svg) center center no-repeat;
-		background-size: 120px 95px;
+		background-size: 80%;
 	}
 	.header--fixed .header__is-btn {
 		display: block;
@@ -860,16 +866,18 @@ a:hover {
 	.header__logo, .header--fixed .header__logo {
 		position: static;
 		margin: 0 0 0 20px;
-		width: 66px;
+		width: 82px;
 		height: 70px;
 		background: url(/assets/common/img/logo_gochisokai.svg) left center no-repeat;
 		background-size: 100%;
 	}
 	.header__search_rest, .header--fixed .header__search_rest {
-		/*position: static;
-		margin: 0 0 0 20px;*/
-		width: 100px;
-		height: 35px;
+		position: absolute;
+		top: 0;
+		/*margin: 0 0 0 200px;*/
+		margin: 0 40%;
+		width: 40%;/*150px;*/
+		height: 70px;
 		background: url(/assets/common/img/search_rest.svg) center center no-repeat;
 		background-size: 100%;
 	}
@@ -1158,14 +1166,14 @@ a:hover {
 
 /* --------------- footer --------------- */
 .footer {
-	padding: 56px 0 0;
+	padding: 0;
 	background: #d92c00;
 }
 
 .footer__inner {
 	position: relative;
 	margin: 0 auto;
-	padding: 0 0 51px;
+	padding: 0 0 15px;
 	width: 1000px;
 	table-layout: fixed;
 }
@@ -1381,7 +1389,7 @@ a:hover {
 
 .footer__page-top {
 	position: absolute;
-	top: -87px;
+	top: -32px;
 	right: -6px;
 	margin: 0;
 	width: 130px;
@@ -1402,7 +1410,7 @@ a:hover {
 }
 
 .footer__copyright-area {
-	background: #ba2700;
+	background: #d92c00;
 	font-size: 10px;
 	color: #fff;
 }
@@ -1430,9 +1438,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 1050px) {
-	.footer {
-		padding: 60px 0 0;
-	}
 	.footer__inner {
 		margin: 0 auto;
 		width: 616px;
@@ -1492,7 +1497,7 @@ a:hover {
 		padding: 23px 0 26px 72px;
 	}
 	.footer__page-top {
-		top: -91px;
+		top: -32px;
 		right: -21px;
 		margin: 0;
 	}
@@ -1521,7 +1526,7 @@ a:hover {
 	}
 	.footer__inner {
 		box-sizing: border-box;
-		padding: 0 15px 41px;
+		padding: 0 15px;
 		width: 100%;
 	}
 	.footer__logo-area {
@@ -1644,7 +1649,7 @@ a:hover {
 		font-size: 14px;
 	}
 	.footer__page-top {
-		top: -31px;
+		top: -32px;
 		right: 50%;
 		margin: 0 -64px 0 0;
 	}
@@ -1988,6 +1993,16 @@ a:hover {
 	-webkit-backface-visibility: hidden;
 	        backface-visibility: hidden;
 }
+
+	.top--cover__itadakimasu {
+		margin: 0 auto;
+		max-width: 1200px;
+		width: 100%;
+	}
+	.top--cover__itadakimasu img {
+		width: 100%;
+		height: auto;
+	}
 
 @media only screen and (max-width: 1050px) {
 	.top--cover-2 {
