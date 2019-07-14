@@ -1,5 +1,6 @@
 <footer class="footer">
 <div class="footer__inner">
+<script>
 <div class="clearfix">
 <div class="footer__logo-area">
 <p class="footer__logo img_replace"><a href="/">ごちそう会</a></p>
@@ -34,6 +35,7 @@
 </div>
 
 <!-- /.clearfix --></div>
+</script>
 <p class="footer__page-top"><a href="#sitetop"><img src="/assets/common/img/footer_pagetop_txt.png" alt="PAGE TOP"></a></p>
 <!-- /.footer__inner --></div>
 <div class="footer__copyright-area">
