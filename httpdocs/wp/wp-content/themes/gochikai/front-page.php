@@ -129,7 +129,7 @@
 
 <!-- youtube movie (2018/04/09 added) -->
 <!-- 後でスタイルシートに移したいが、どこ？ -->
-<div style="width:90%; max-width:700px; margin:0 auto 24px auto;">
+<div style="width:80%; max-width:700px; margin:0 auto 24px auto;">
 <div style="width:100%; height:0; padding-bottom:56.25%; position:relative;">
 <iframe width="100%" height="100%" style="position:absolute; top:0;left:0;" src="https://www.youtube.com/embed/qLFz-QIC6s0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
