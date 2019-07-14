@@ -3,6 +3,7 @@
 <header class="header header--shadow">
 <div class="header__inner header__inner--hidden">
 <h1 class="header__logo img_replace"><a href="/">ごちそう会</a></h1>
+<div class="header__search_rest img_replace"><a href="/restaurant/tokyo/">お店をさがす</a></div>
 <p class="header__is-btn"><a class="header__is-btn--burger" href="#"><span></span></a></p>
 <div class="header__menu header__menu--static">
 
