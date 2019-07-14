@@ -111,6 +111,10 @@
 </section>
 </script>
 
+<section class="top--cover__itadakimasu">
+	<div class="top--cover__itadakimasu"><img src="/assets/common/img/itadakimasu_with_logo.png" alt=""></div>
+</section>
+
 <section class="section top--concept" id="top--concept">
 <div class="top__inner">
 <h1 class="top--hdr top--concept__hdr"><img src="/assets/img/index/concept_hdr_l.png" data-src="/assets/img/index/concept_hdr_s.png" alt="CONCEPT"></h1>
