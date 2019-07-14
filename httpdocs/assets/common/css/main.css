@@ -366,6 +366,15 @@ a:hover {
 	height: 43px;
 	background: url(/assets/common/img/logo_gochisokai.svg) no-repeat;
 }
+.header--fixed .header__search_rest, .header__mini .header__search_rest {
+	top: 0;
+	bottom: 0;
+	left: 40px;
+	margin: auto;
+	width: 210px;
+	height: 60px;
+	background: url(/assets/common/img/search_rest.svg) no-repeat;
+}
 
 .header--fixed .header__is-btn, .header__mini .header__is-btn {
 	display: block;
@@ -571,6 +580,14 @@ a:hover {
 		width: 120px;
 		height: 95px;
 		background: url(/assets/common/img/logo_gochisokai.svg) no-repeat;
+		background-size: 120px 95px;
+	}
+	.header--fixed .header__search_rest {
+		position: static;
+		margin: 0 auto;
+		width: 300px;
+		height: 95px;
+		background: url(/assets/common/img/search_rest.svg) center center no-repeat;
 		background-size: 120px 95px;
 	}
 	.header--fixed .header__is-btn {
@@ -838,14 +855,22 @@ a:hover {
 		position: relative;
 		box-sizing: border-box;
 		padding: 0;
-		height: 70px;
+		height: 66px;
 	}
 	.header__logo, .header--fixed .header__logo {
 		position: static;
 		margin: 0 0 0 20px;
-		width: 85px;
+		width: 66px;
 		height: 70px;
 		background: url(/assets/common/img/logo_gochisokai.svg) left center no-repeat;
+		background-size: 100%;
+	}
+	.header__search_rest, .header--fixed .header__search_rest {
+		/*position: static;
+		margin: 0 0 0 20px;*/
+		width: 100px;
+		height: 35px;
+		background: url(/assets/common/img/search_rest.svg) center center no-repeat;
 		background-size: 100%;
 	}
 	.header__is-btn a, .header--fixed .header__is-btn a {
