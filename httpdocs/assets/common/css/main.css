@@ -360,10 +360,10 @@ a:hover {
 .header--fixed .header__logo, .header__mini .header__logo {
 	top: 0;
 	bottom: 0;
-	left: 20px;
+	left: 16px;
 	margin: auto;
-	width: 69px;
-	height: 43px;
+	width: 61px;
+	height: 35px;
 	background: url(../../common/img/logo_gochisokai.svg) no-repeat;
 }
 
@@ -843,8 +843,8 @@ a:hover {
 	.header__logo, .header--fixed .header__logo {
 		position: static;
 		margin: 0 0 0 20px;
-		width: 85px;
-		height: 70px;
+		width: 77px;
+		height: 62px;
 		background: url(../../common/img/logo_gochisokai.svg) left center no-repeat;
 		background-size: 100%;
 	}
