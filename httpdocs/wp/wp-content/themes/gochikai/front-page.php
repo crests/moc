@@ -106,7 +106,7 @@
 <div class="js-panel-08 top--cover-2__item top--cover-2__item--box" id="cover__item--38"></div>
 <div class="top--cover-2__logo img_replace">ごちそう会</div>-->
 <!-- /.top--cover-2__inner --></div>
-<p class="top--cover-2__logo tb-show img_replace">飲み放題より満足できる、ごち会を開こう！ ごち会</p>
+<p class="top--cover-2__logo tb-show img_replace">飲み会に、ごちそうを</p>
 <!-- /.top--cover-2__bg --></div>
 </section>
 </script>
@@ -125,11 +125,14 @@
 <p class="top--concept__img" id="top--concept__img--03"></p>
 </div>
 <div class="top--concept__txt-box">
-<p class="top--concept__txt">サークルやクラスの飲み会と言えば、<br>いつも飲み放題コース。<br><br>
-同じ金額を払うなら、<br>おいしい食事をしっかり食べたい。<br>
-お酒は、いいものを味わいたい。<br><br>
-そんな想いから生まれた<br><em>「自慢の料理＋おすすめのドリンク」</em>の<br class="sp--line-break">おいしい選択肢、<br>
-それが<em>「ごち会」</em>です。</p>
+<p class="top--concept__txt">
+	飲み放題で「物足りないな」<br>「もっとおいしく食べたい」<br>と思うこと、ありませんか？<br>
+<em>新しい飲み会の提案です。</em>
+<br><br>
+私たちはお店をめぐり、<br>心からおすすめできるお店と<br>
+<em>【自慢の料理＋おすすめの2杯】</em>の、<br><em>「ごち会コース」</em>をつくりました。
+<br><br>
+おいしいコースで、<br>お腹も心も満たされる時間をどうぞ。</p>
 
 <!-- youtube movie (2018/04/09 added) -->
 <!-- 後でスタイルシートに移したいが、どこ？ -->
