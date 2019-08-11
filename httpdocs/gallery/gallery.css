@@ -1,0 +1,27 @@
+#pictures {
+  margin: 8px auto;
+}
+
+
+#pictures img {
+  width: 21vw;
+  height: 14vw;
+  margin: 1vw;
+}
+
+
+@media only screen and (max-width: 1050px){
+  #pictures img {
+    width: 30vw;
+    height: 20vw;
+    margin: 1vw;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #pictures img {
+    width: 42vw;
+    height: 28vw;
+    margin: 3vw;
+  }
+}

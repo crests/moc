@@ -118,7 +118,7 @@
 <section class="section top--concept" id="top--concept">
 <div class="top__inner">
 <h1 class="top--hdr top--concept__hdr"><img src="/assets/img/index/concept_hdr_l.png" data-src="/assets/img/index/concept_hdr_s.png" alt="CONCEPT"></h1>
-<p class="top--consept__title" id="top--consept__title"><span id="js-txt-01">また飲み放題？</span><br class="sp--line-break"><span class="span" id="js-txt-02">同じ金額を払うならごち会！</span></p>
+<p class="top--consept__title" id="top--consept__title"><span id="js-txt-01">飲み会に、ごちそうを。</p>
 <div class="top--concept__img-box">
 <p class="top--concept__img" id="top--concept__img--01"></p>
 <p class="top--concept__img" id="top--concept__img--02"></p>
